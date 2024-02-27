@@ -1,18 +1,18 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Uma jornalista coletou dados sobre os preços de álcool e gasolina em diversos estados para uma reportagem sobre a vantagem econômica de abastecer com álcool. A regra utilizada é que o álcool é considerado vantajoso quando seu preço por litro é no máximo igual a 70% do preço por litro da gasolina. Dados os preços coletados, seu programa deve identificar em quais estados o abastecimento com álcool é mais vantajoso.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista onde o primeiro elemento é um inteiro N representando o número de estados pesquisados. Cada um dos N elementos subsequentes é uma sublista contendo o identificador do estado (duas letras maiúsculas), seguido por dois números reais representando o preço do litro de álcool e o preço do litro de gasolina, respectivamente.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma lista contendo os identificadores dos estados onde o uso de álcool é vantajoso, na ordem em que aparecem na entrada. Se em nenhum estado o uso de álcool for vantajoso, a lista deve conter apenas o caractere '*' (asterisco).
 </p>
 
 
@@ -28,7 +28,10 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    pesquisa_precos(2, [["AM", 7.00, 10.00], ["RS", 7.01, 10.00]]) >> ['AM']
+pesquisa_precos(3, [["SP", 4.90, 5.80], ["RJ", 4.70, 5.70], ["PR", 4.60, 5.60]]) >> ['*']
+pesquisa_precos(4, [["SC", 5.20, 5.72], ["MT", 4.22, 6.10], ["AL", 5.55, 6.20], ["GO", 4.30, 6.25]]) >> ['MT', 'GO']
+
 </pre>
 {% endif %}
 </div>

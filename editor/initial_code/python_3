@@ -1,1 +1,15 @@
-{{CODIGO INICIAL}}
+def pesquisa_precos(N, dados):
+    # Seu código aqui
+    return None
+
+
+print("Example:")
+print(pesquisa_precos(2, [["AM", 7.00, 10.00], ["RS", 7.01, 10.00]]))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+
+assert pesquisa_precos(2, [["AM", 7.00, 10.00], ["RS", 7.01, 10.00]]) == ['AM']
+assert pesquisa_precos(3, [["SP", 4.90, 5.80], ["RJ", 4.70, 5.70], ["PR", 4.60, 5.60]]) == ['*']
+assert pesquisa_precos(4, [["SC", 5.20, 5.72], ["MT", 4.22, 6.10], ["AL", 5.55, 6.20], ["GO", 4.30, 6.25]]) == ['MT', 'GO']
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
